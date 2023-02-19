@@ -1,7 +1,7 @@
 Welcome to CougarDocs!
 ===================================
 
-CougarDocs is intended to be a central, easy to access, up-to-date resource for Team 1403.
+CougarDocs is intended to be a central, easy to access, up-to-date resource for Electrical on Team 1403.
 
 .. note::
 This is not at all complete and will 100% be worked on
