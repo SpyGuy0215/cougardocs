@@ -1,7 +1,11 @@
 CougarDocs
 =======================================
 
-Some ReadTheDocs documentation for Team 1403 Cougar Robotics. 
+.. image:: https://readthedocs.org/projects/cougardocs/badge/?version=latest
+    :target: https://cougardocs.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+ReadTheDocs documentation for Team 1403 Cougar Robotics. 
 
 Documentation found at:
 
