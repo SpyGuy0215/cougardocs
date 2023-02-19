@@ -1,9 +1,10 @@
-Template for the Read the Docs tutorial
+CougarDocs
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+Some ReadTheDocs documentation for Team 1403 Cougar Robotics. 
 
-Read the tutorial here:
+Documentation found at:
 
-https://docs.readthedocs.io/en/stable/tutorial/
+https://www.cougardocs.readthedocs.io
+
+https://www.cougardocs.rtfd.io
