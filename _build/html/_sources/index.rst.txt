@@ -5,15 +5,21 @@
 
 Welcome to CougarDocs!
 ======================================
+CougarDocs is a centralized documentation website for the Electrical subteam
+on Team 1403 Cougar Robotics.
+
+.. note:: This is a work in progress. Please be patient as I work to fix
+   bugs and write more documentation.
+
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :titlesonly:
+   :glob:
+   
+   parts
 
-
-
-Indices and tables
-==================
 
 * :ref:`genindex`
 * :ref:`modindex`

@@ -1,0 +1,45 @@
+WS2812 (NeoPixels)
+===================
+WS2812s, also referred to as NeoPixels, are a popular type of individually
+adressable RGB LEDs. They can be used on the robot for multiple uses: communicating
+between human players and the driver, showing robot status, or just looking cool.
+
+.. warning:: 
+    WS2812s use a lot of power and RAM. Power can be calculated, but not RAM. 
+    Make sure to be conservative with your use of WS2812s on the robot in order to 
+    avoid excessive power draw and RAM usage.
+
+Connections
+--------------
+- VRM Power to WS2812 Power
+- VRM Ground to WS2812 Ground
+
+.. note:: 
+    In order to decide how much power you need, refer to the :ref:`Powering the LEDs` 
+    section.
+
+.. warning:: 
+    If you have any reason to suspect that the power input from the VRM might 
+    fluctuate, put a capacitor between the VRM and the WS2812 power input to 
+    stabilize power fluctuations and keep the WS2812s from being damaged.
+
+- PWM Pin to 330 Ohm Resistor, 330 Ohm Resistor to WS2812 Data In
+
+.. _Powering the LEDs:
+
+Powering the LEDs
+------------------
+In order to calculate how much power you need, there is a formula that you can use:
+
+.. code-block:: 
+
+    Number of LEDS * 20 / 1000 = Power Draw (Amps)
+
+Using the number of LEDs that you are powering in total, you can get the power
+draw. Using this information, you can decide which VRM port to use (**5V 2A** or 
+**5V 500mA**), and how many LEDs you can safely power with that port.
+
+.. note::
+    It is recommended that you add a little bit of buffer room on this, around
+    0.2Amps, so that the LEDs dont flicker, dim, or brownout.
+    
