@@ -7,8 +7,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'CougarDocs'
-copyright = '2023, SpyGuy\\'
-author = 'SpyGuy\\'
+copyright = '2023, Shashank Prasanna (SpyGuy0215)'
+author = 'Shashank Prasanna (SpyGuy0215)'
 release = '2023'
 
 # -- General configuration ---------------------------------------------------
@@ -24,5 +24,5 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
