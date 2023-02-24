@@ -7,14 +7,14 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'CougarDocs'
-copyright = '2023, Shashank Prasanna (SpyGuy0215)'
-author = 'Shashank Prasanna (SpyGuy0215)'
+copyright = '2023, Shashank Prasanna'
+author = 'Shashank Prasanna'
 release = '2023'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ["myst_parser"]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']

@@ -83,6 +83,7 @@
 <p>WS2812s, also referred to as NeoPixels, are a popular type of individually
 adressable RGB LEDs. They can be used on the robot for multiple uses: communicating
 between human players and the driver, showing robot status, or just looking cool.</p>
+<a class="reference internal image-reference" href="../_images/WS2812.jpg"><img alt="../_images/WS2812.jpg" src="../_images/WS2812.jpg" style="width: 350px;" /></a>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>WS2812s use a lot of power and RAM. Power can be calculated, but not RAM.
@@ -91,23 +92,18 @@ avoid excessive power draw and RAM usage.</p>
 </div>
 <section id="connections">
 <h2>Connections<a class="headerlink" href="#connections" title="Permalink to this heading"></a></h2>
+<p>The WS2812s that we have so far are from CTR ELectronics, and so this wiring guide applies to them.</p>
+<p>These LEDs in particular have 5 wires: 3 bunched together just plug into the RIO and 2 bunched together are for power.</p>
 <ul class="simple">
-<li><p>VRM Power to WS2812 Power</p></li>
-<li><p>VRM Ground to WS2812 Ground</p></li>
+<li><p>The power wires (2 bunched together) plug into the VRM port</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In order to decide how much power you need, refer to the <a class="reference internal" href="#powering-the-leds"><span class="std std-ref">Powering the LEDs</span></a>
 section.</p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If you have any reason to suspect that the power input from the VRM might
-fluctuate, put a capacitor between the VRM and the WS2812 power input to
-stabilize power fluctuations and keep the WS2812s from being damaged.</p>
-</div>
 <ul class="simple">
-<li><p>PWM Pin to 330 Ohm Resistor, 330 Ohm Resistor to WS2812 Data In</p></li>
+<li><p>The 3 wires bunched together plug into a RoboRIO PWM port</p></li>
 </ul>
 </section>
 <section id="powering-the-leds">
@@ -122,7 +118,7 @@ draw. Using this information, you can decide which VRM port to use (<strong>5V 2
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>It is recommended that you add a little bit of buffer room on this, around
-0.2Amps, so that the LEDs dont flicker, dim, or brownout.</p>
+0.2 Amps, so that the LEDs dont flicker, dim, or brownout.</p>
 </div>
 </section>
 </section>
@@ -137,7 +133,7 @@ draw. Using this information, you can decide which VRM port to use (<strong>5V 2
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Shashank Prasanna (SpyGuy0215).</p>
+    <p>&#169; Copyright 2023, Shashank Prasanna.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
