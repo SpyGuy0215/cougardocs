@@ -4,6 +4,9 @@ The SPARK MAX Motor Controller is a motor controller made by REV Robotics. It
 is a device that can control both brushed and brushless motors, mainly NEOs and 
 NEO 550s.
 
+.. image:: images/SPARKMAXMotorController.webp
+    :height: 350
+
 Connections
 ----------------
 - SPARK MAX Power to PDH
