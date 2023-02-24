@@ -4,6 +4,9 @@ The RoboRIO is a robotics controller developed by National Instruments specifica
 for FIRST. It is the second model of the RoboRIO, improving on the RoboRIO 1.0. 
 The RoboRIO 2.0 is used to control all of the electronic components on the robot.
 
+.. image:: images/roborio2.jpg
+  :height: 350
+
 Troubleshooting
 ---------------
 
