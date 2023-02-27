@@ -1,0 +1,3 @@
+# extensions that CougarDocs needs
+
+myst-parser  # support for markdown
