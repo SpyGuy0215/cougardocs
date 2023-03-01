@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WS2812 (NeoPixels) &mdash; CougarDocs 2023 documentation</title>
+  <title>Limelight 3.0 &mdash; CougarDocs 2023 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -20,8 +20,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Hopefully this markdown shows up?" href="mdtut.html" />
-    <link rel="prev" title="SPARK MAX Motor Controller" href="SPARKMAXMotorController.html" /> 
+    <link rel="next" title="Magnetically Actuated Switch" href="MagneticallyActuatedSwitch.html" />
+    <link rel="prev" title="Robot Parts" href="../parts.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,11 +46,11 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../parts.html">Robot Parts</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Limelight3.html">Limelight 3.0</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Limelight 3.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="MagneticallyActuatedSwitch.html">Magnetically Actuated Switch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="RoboRIO.html">RoboRIO 2.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="SPARKMAXMotorController.html">SPARK MAX Motor Controller</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">WS2812 (NeoPixels)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WS2812.html">WS2812 (NeoPixels)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mdtut.html">Hopefully this markdown shows up?</a></li>
 </ul>
 </li>
@@ -72,9 +72,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../parts.html">Robot Parts</a></li>
-      <li class="breadcrumb-item active">WS2812 (NeoPixels)</li>
+      <li class="breadcrumb-item active">Limelight 3.0</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/parts/WS2812.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/parts/Limelight3.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -82,48 +82,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ws2812-neopixels">
-<h1>WS2812 (NeoPixels)<a class="headerlink" href="#ws2812-neopixels" title="Permalink to this heading"></a></h1>
-<p>WS2812s, also referred to as NeoPixels, are a popular type of individually
-adressable RGB LEDs. They can be used on the robot for multiple uses: communicating
-between human players and the driver, showing robot status, or just looking cool.</p>
-<a class="reference internal image-reference" href="../_images/WS2812.jpg"><img alt="../_images/WS2812.jpg" src="../_images/WS2812.jpg" style="width: 350px;" /></a>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>WS2812s use a lot of power and RAM. Power can be calculated, but not RAM.
-Make sure to be conservative with your use of WS2812s on the robot in order to
-avoid excessive power draw and RAM usage.</p>
-</div>
-<section id="connections">
-<h2>Connections<a class="headerlink" href="#connections" title="Permalink to this heading"></a></h2>
-<p>The WS2812s that we have so far are from CTR ELectronics, and so this wiring guide applies to them.</p>
-<p>These LEDs in particular have 5 wires: 3 bunched together just plug into the RIO and 2 bunched together are for power.</p>
+  <section id="limelight-3-0">
+<h1>Limelight 3.0<a class="headerlink" href="#limelight-3-0" title="Permalink to this heading"></a></h1>
+<p><img alt="View larger image of Limelight 3" src="https://cdn.andymark.com/product_images/limelight-3/63ceb4499a4720101863db46/detail.jpg?c=1674490953" /></p>
+<p>The Limelight is a ‘plug and play’ smart device, which is able to identify AprilTags to interact with CUBE Nodes. It is also able to identify reflective tape, to be able to interact with the CONE nodes. The Limelight supports Google Coral machine learning acceleration, and can detect objects real time. It’s Easy, Fast and Versatile.</p>
+<p>The Limelight’s official website can be found <a class="reference external" href="https://www.limelightvision.io">here</a>.</p>
+<section id="wiring">
+<h2>Wiring<a class="headerlink" href="#wiring" title="Permalink to this heading"></a></h2>
+<p>The materials needed are as follows:</p>
 <ul class="simple">
-<li><p>The power wires (2 bunched together) plug into the VRM port</p></li>
+<li><p>Power and ground wires</p></li>
+<li><p>5A Fuse</p></li>
+<li><p>Ethernet Cable</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In order to decide how much power you need, refer to the <a class="reference internal" href="#powering-the-leds"><span class="std std-ref">Powering the LEDs</span></a>
-section.</p>
+<p>Use the old 5A fuses, not the new ones</p>
 </div>
-<ul class="simple">
-<li><p>The 3 wires bunched together plug into a RoboRIO PWM port</p></li>
-</ul>
+<ol class="arabic simple">
+<li><p>Run your power and ground wires from your Limelight to a slot on your PDP</p></li>
+<li><p>Put a 5 amp Fuse on the slot you wired the Limelight to</p></li>
+<li><p>Run an ethernet cable from your Limelight to the radio</p></li>
+</ol>
 </section>
-<section id="powering-the-leds">
-<span id="id1"></span><h2>Powering the LEDs<a class="headerlink" href="#powering-the-leds" title="Permalink to this heading"></a></h2>
-<p>In order to calculate how much power you need, there is a formula that you can use:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Number</span> <span class="n">of</span> <span class="n">LEDS</span> <span class="o">*</span> <span class="mi">20</span> <span class="o">/</span> <span class="mi">1000</span> <span class="o">=</span> <span class="n">Power</span> <span class="n">Draw</span> <span class="p">(</span><span class="n">Amps</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Using the number of LEDs that you are powering in total, you can get the power
-draw. Using this information, you can decide which VRM port to use (<strong>5V 2A</strong> or
-<strong>5V 500mA</strong>), and how many LEDs you can safely power with that port.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>It is recommended that you add a little bit of buffer room on this, around
-0.2 Amps, so that the LEDs dont flicker, dim, or brownout.</p>
-</div>
+<section id="specifications">
+<h2>Specifications<a class="headerlink" href="#specifications" title="Permalink to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Specification</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Boot Time</p></td>
+<td><p>15 Seconds</p></td>
+</tr>
+<tr class="row-odd"><td><p>Resolution vs FPS</p></td>
+<td><p>480p &#64; 90fps, 960p &#64; 40fps, 720p &#64; 40fps, 2592x1944 (5 megapixels) &#64; 13-15fps</p></td>
+</tr>
+<tr class="row-even"><td><p>USB</p></td>
+<td><p>5.0 Gbps USB 3.0</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 
@@ -131,8 +132,8 @@ draw. Using this information, you can decide which VRM port to use (<strong>5V 2
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="SPARKMAXMotorController.html" class="btn btn-neutral float-left" title="SPARK MAX Motor Controller" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="mdtut.html" class="btn btn-neutral float-right" title="Hopefully this markdown shows up?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../parts.html" class="btn btn-neutral float-left" title="Robot Parts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="MagneticallyActuatedSwitch.html" class="btn btn-neutral float-right" title="Magnetically Actuated Switch" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
