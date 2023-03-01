@@ -19,6 +19,7 @@ on Team 1403 Cougar Robotics.
    :glob:
    
    parts
+   documentation_tutorial
 
 
 * :ref:`genindex`

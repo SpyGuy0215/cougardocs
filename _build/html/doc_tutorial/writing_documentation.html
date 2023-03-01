@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 1: Writing Documentation &mdash; CougarDocs 2023 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Step 2: Uploading Documentation" href="uploading_documentation.html" />
+    <link rel="prev" title="How To Make Documentation" href="../documentation_tutorial.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CougarDocs
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../parts.html">Robot Parts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../documentation_tutorial.html">How To Make Documentation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Step 1: Writing Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uploading_documentation.html">Step 2: Uploading Documentation</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CougarDocs</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../documentation_tutorial.html">How To Make Documentation</a></li>
+      <li class="breadcrumb-item active">Step 1: Writing Documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/doc_tutorial/writing_documentation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="step-1-writing-documentation">
+<h1>Step 1: Writing Documentation<a class="headerlink" href="#step-1-writing-documentation" title="Permalink to this heading"></a></h1>
+<p>In order to add documentation to the website, you first need to <em>write</em> said
+documentation. This section will teach you the basics of ReStructuredText and
+how to write documentation in it.</p>
+<section id="making-the-file">
+<h2>Making the File<a class="headerlink" href="#making-the-file" title="Permalink to this heading"></a></h2>
+<p>A ReStructuredText file is a file with the extension <cite>.rst</cite>. Make a file and name
+it after whatever you are going to be documenting, and end it with the <cite>.rst</cite> file
+extension.</p>
+<p>ReStructuredText is a powerful format because it allows you to do much more than just
+plain text. You can make notes, warnings, content tables, images, links, and so much
+more.</p>
+</section>
+<section id="intro-to-restructuredtext">
+<h2>Intro to ReStructuredText<a class="headerlink" href="#intro-to-restructuredtext" title="Permalink to this heading"></a></h2>
+<p>ReStructured text has special tags that you can use to bring up special things.
+For example:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a note!</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This is a warning!</p>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>This is an error!</p>
+</div>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">Table</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
+<tbody>
+<tr class="row-odd"><td><p>This is a list table!</p></td>
+<td><p>This can store content!</p></td>
+</tr>
+<tr class="row-even"><td><p>And even more!</p></td>
+<td><p>Wow!</p></td>
+</tr>
+<tr class="row-odd"><td><p>It’s amazing!</p></td>
+<td><p>Super cool!</p></td>
+</tr>
+</tbody>
+</table>
+<p>For a full, in-depth guide on ReStructuredText, go to <a class="reference external" href="https://sphinx-tutorial.readthedocs.io/step-1/">this helpful site</a>
+to learn more.</p>
+</section>
+<section id="organizing-documentation">
+<h2>Organizing Documentation<a class="headerlink" href="#organizing-documentation" title="Permalink to this heading"></a></h2>
+<p>Documentation varies based on the component or process that you are documenting.
+Here are some helpful tips that will apply in any circumstance:</p>
+<ul class="simple">
+<li><p>Organize it properly. Make sure it is like other similar documentation.</p></li>
+<li><p>Keep it short and simple. More information makes it hard to find what you want.</p></li>
+<li><p>Include lots of technical information. This could be useful if you need something
+specific later on.</p></li>
+</ul>
+</section>
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this heading"></a></h2>
+<p>Read on to find out how to get your documentation including in the CougarDocs
+website!</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../documentation_tutorial.html" class="btn btn-neutral float-left" title="How To Make Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="uploading_documentation.html" class="btn btn-neutral float-right" title="Step 2: Uploading Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Shashank Prasanna.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
