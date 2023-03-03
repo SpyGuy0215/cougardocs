@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Limelight 3.0 &mdash; CougarDocs 2023 documentation</title>
+  <title>Hall Effect Sensor &mdash; CougarDocs 2023 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -20,8 +20,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Magnetically Actuated Switch" href="MagneticallyActuatedSwitch.html" />
-    <link rel="prev" title="Robot Parts" href="../parts.html" /> 
+    <link rel="next" title="Limelight 3.0" href="Limelight3.html" />
+    <link rel="prev" title="Color Sensor" href="ColorSensor.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,10 +46,14 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../parts.html">Robot Parts</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Limelight 3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ColorSensor.html">Color Sensor</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Hall Effect Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Limelight3.html">Limelight 3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LimitSwitch.html">Limit Switch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="MagneticallyActuatedSwitch.html">Magnetically Actuated Switch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="RoboRIO.html">RoboRIO 2.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="SPARKMAXMotorController.html">SPARK MAX Motor Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UltrasonicSensor.html">Ultrasonic Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="WS2812.html">WS2812 (NeoPixels)</a></li>
 </ul>
 </li>
@@ -71,9 +75,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../parts.html">Robot Parts</a></li>
-      <li class="breadcrumb-item active">Limelight 3.0</li>
+      <li class="breadcrumb-item active">Hall Effect Sensor</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/parts/Limelight3.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/parts/HallEffectSensor.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -81,22 +85,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="limelight-3-0">
-<h1>Limelight 3.0<a class="headerlink" href="#limelight-3-0" title="Permalink to this heading"></a></h1>
-<p><img alt="View larger image of Limelight 3" src="https://cdn.andymark.com/product_images/limelight-3/63ceb4499a4720101863db46/detail.jpg?c=1674490953" /></p>
-<p>The Limelight is a ‘plug and play’ smart device, which is able to identify AprilTags to interact with CUBE Nodes. It is also able to identify reflective tape, to be able to interact with the CONE nodes. The Limelight supports Google Coral machine learning acceleration, and can detect objects real time.</p>
-<p>The Limelight’s official website can be found <a class="reference external" href="https://www.limelightvision.io">here</a>.</p>
+  <section id="hall-effect-sensor">
+<h1>Hall Effect Sensor<a class="headerlink" href="#hall-effect-sensor" title="Permalink to this heading"></a></h1>
+<p><img alt="View larger image of Hall Effect Sensor" src="https://cdn.andymark.com/product_images/hall-effect-sensor-b/5fc6920a5ac4477c8d250cc5/detail.jpg?c=1606849034" />
+This sensor detects when a magnet comes near, and uses this to sense things. The LED is always on, and will turn off when the magnet is closed, essentially breaking the circuit. Used as a sort of limit switch sometimes.</p>
+<p>The Hall Effect Sensor website can be found <a class="reference external" href="https://www.andymark.com/products/hall-effect-sensor-b">here</a>.</p>
 <section id="wiring">
 <h2>Wiring<a class="headerlink" href="#wiring" title="Permalink to this heading"></a></h2>
-<p>The wiring for the Limelight is pretty simple:</p>
-<ul class="simple">
-<li><p>Power and ground wires (Limelight) –&gt; PDH</p>
-<ul>
-<li><p>Put a 5A Fuse on the PDH port that you wired it to</p></li>
-</ul>
-</li>
-<li><p>Ethernet Cable (Limelight) –&gt; Radio</p></li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The only cable you need is a PWM</p>
+</div>
+<ol class="arabic simple">
+<li><p>Connect the PWM power, ground and signal wires onto the RoboRIO</p></li>
+<li><p>Black is ground, red is 5 volts and the white wire is a signal wire</p></li>
+</ol>
 </section>
 <section id="specifications">
 <h2>Specifications<a class="headerlink" href="#specifications" title="Permalink to this heading"></a></h2>
@@ -107,14 +110,14 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Boot Time</p></td>
-<td><p>15 Seconds</p></td>
+<tr class="row-even"><td><p>Measurements</p></td>
+<td><p>1.41in L x 0.625in W</p></td>
 </tr>
-<tr class="row-odd"><td><p>Resolution vs FPS</p></td>
-<td><p>480p &#64; 90fps, 960p &#64; 40fps, 720p &#64; 40fps, 2592x1944 (5 megapixels) &#64; 13-15fps</p></td>
+<tr class="row-odd"><td><p>Maximum Voltage</p></td>
+<td><p>5V</p></td>
 </tr>
-<tr class="row-even"><td><p>USB</p></td>
-<td><p>5.0 Gbps USB 3.0</p></td>
+<tr class="row-even"><td><p>Pole detection</p></td>
+<td><p>Bipolar</p></td>
 </tr>
 </tbody>
 </table>
@@ -125,8 +128,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../parts.html" class="btn btn-neutral float-left" title="Robot Parts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="MagneticallyActuatedSwitch.html" class="btn btn-neutral float-right" title="Magnetically Actuated Switch" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ColorSensor.html" class="btn btn-neutral float-left" title="Color Sensor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Limelight3.html" class="btn btn-neutral float-right" title="Limelight 3.0" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
